@@ -1,6 +1,6 @@
 # EGC251-C\C++ Class Project Spring 2018
 
-# Abstract:
+## Abstract:
 For this project I intended to create a command line based personal assistant to control a microcontroller, and have a security system via a webcam. With the project I incorporated the Raspberry Pi 3 B, the Arduino UNO, Raspbian OS, a Logitech webcam, and a few different applications to run things on the back end of the program. My design idea was to upload Arduino led "sketches" to the microcontroller via a bash script every time a function was called within the C++ application. Each led pattern option that the assistant provided was written in it's own file. After the option was called, the sketch would be uploaded to the Arduino, and display the led pattern in a loop. The final option of the personal assistant would have, is a security camera. This option would call the function, which then called the scripts to run the camera and take a few pictures if there was movement.
 
 Software Installation:
@@ -56,10 +56,12 @@ make upload
 
 ===
 
-Led setup ino file with cpp program options:
+## Led setup ino file with cpp program options:
+```bash
 1: nightrider
 2: everyother
 3: everyotherYel
 4: everyotherRed
 5: firsttwolasttwo
 6: take a picture with motion (security).
+```
